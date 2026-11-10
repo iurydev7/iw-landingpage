@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin
+# Após configurar seu domínio oficial, crie sitemap.xml e informe aqui.

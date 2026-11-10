@@ -1,0 +1,10 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Home from './pages/Home'
+import Privacy from './pages/Privacy'
+import Admin from './pages/Admin'
+import './styles/global.css'
+import './styles/home.css'
+import './styles/admin.css'
+ReactDOM.createRoot(document.getElementById('root')).render(<React.StrictMode><BrowserRouter><Routes><Route path="/" element={<Home/>}/><Route path="/privacidade" element={<Privacy/>}/><Route path="/admin/*" element={<Admin/>}/><Route path="*" element={<Navigate to="/" replace/>}/></Routes></BrowserRouter></React.StrictMode>)
